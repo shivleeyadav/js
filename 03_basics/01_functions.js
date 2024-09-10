@@ -38,3 +38,26 @@ console.log(loginUserMessage());
 
 //if we didn't pass any value it shows undefined just logged in
 
+function calculateCartPrice(...num1){      //agr hum sirf num1 likhte h to bs ek value return hogi ..if agr hum ...num1 aise likhte h to kitne hi num ho sb return ho jayenge
+        return num1
+}
+console.log(calculateCartPrice(200,500,400));
+
+const user = {
+    username: "Shivlee",
+    price: 199
+}
+
+function handleObject(anyobject){
+        console.log(`username is ${anyobject.username} ans price is ${anyobject.price}`);
+        
+}
+handleObject(user)
+
+const myNewArray = [200,500,600,300]
+
+function returnSecondValue(getarray){
+        return getarray[1]
+}
+
+console.log(returnSecondValue(myNewArray));
