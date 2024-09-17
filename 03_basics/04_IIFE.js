@@ -1,7 +1,7 @@
 // Immediately Invoked Function Expressions (IIFE)
 
 (function chai(){
-    //name
+    //named IIFE
     console.log(`DB CONNECTED`);
 })();                                 // we can only use () by putting complete function in ()or we can write chai()
 
@@ -10,6 +10,7 @@
 // to uske pollution ko htane k liye IIFE ka use kiya
 
 ( (name) => {
+    //unnamrd iife
     console.log(`DB CONNECTED ${name}`);
 })('Shivlee')                                // we have to use semicolon before describing another function
 
